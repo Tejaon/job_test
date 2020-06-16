@@ -1,0 +1,15 @@
+Challenge #3
+=========
+# python script to parse the object and key
+
+import pyparsing as pp
+
+#for x/y/z value of start and object will changed
+
+start='z'
+end='}'
+object = '{“x”:{“y”:{“z”:”a”}}}'
+
+rule = pp.nestedExpr(start, end)
+for match in rule.searchString(object):
+    print(match)
