@@ -1,0 +1,16 @@
+Challenge#2
+===========
+
+# We need to write the script either shell or python
+
+# Step1 get the metadeta for instance in a file
+	Relative to http://metadata.google.internal/computeMetadata/v1/instance/
+
+# Step2 : Read each metadata from file
+	curl "http://metadata.google.internal/computeMetadata/v1/instance/<example>?alt=json" " -H "Metadata-Flavor: Google"
+
+Example commands
+curl "http://metadata.google.internal/computeMetadata/v1/instance/tags?alt=json" " -H "Metadata-Flavor: Google"
+curl "http://metadata.google.internal/computeMetadata/v1/instance/disks/?recursive=true" -H "Metadata-Flavor: Google"
+
+
