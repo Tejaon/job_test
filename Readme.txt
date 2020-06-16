@@ -6,7 +6,7 @@ IAM and DNS prerequisites are configured such as
 2. Register the domain
 
 aws configure --profile <profile_name>
-aws route53 create-reusable-delegation-set –caller-reference 1224 –profile <profile_name>
+aws route53 create-reusable-delegation-set â€“caller-reference 1224 â€“profile <profile_name>
 > Credentials and Variables
 3. Main.tf
 4. Variables.tf
@@ -35,7 +35,7 @@ aws route53 create-reusable-delegation-set –caller-reference 1224 –profile <prof
 17. Compute and key pair
 > Creating the ELB
 18. Load balancer
-> Creating the “Golden” AMI
+> Creating the â€œGoldenâ€ AMI
 19. Create AMI
 > Configure Auto Scaling Group
 20. launch configuration & ASG
@@ -43,3 +43,6 @@ aws route53 create-reusable-delegation-set –caller-reference 1224 –profile <prof
 21. primary zone
 22. secondary zone
 23. www &  db etc
+> Terraform
+24. Plan
+25. Deploy
